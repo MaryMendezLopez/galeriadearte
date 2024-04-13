@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#carrito">Carrito</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de inicio -->
+    <section id="inicio" style="background-color: #f2f2f2;">
+        <h1>Bienvenido a nuestra Galería de Arte</h1>
+        <!-- Aquí puedes agregar información introductoria -->
+    </section>
+
+    <!-- Galería de fotos -->
+    <section id="galeria">
+        <h2>Nuestra Galería</h2>
+        <div class="gallery">
+            <!-- Seis imágenes de ejemplo -->
+            <div class="image">
+                <img src="Imagen1.jpeg" alt="Obra de arte 1">
+                <button onclick="agregarAlCarrito('Obra de arte 1', 100)">Agregar al carrito</button>
+            </div>
+            <div class="image">
+                <img src="Imagen2.jpeg" alt="Obra de arte 2">
+                <button onclick="agregarAlCarrito('Obra de arte 2', 150)">Agregar al carrito</button>
+            </div>
+            <div class="image">
+                <img src="Imagen3.jpg" alt="Obra de arte 3">
+                <button onclick="agregarAlCarrito('Obra de arte 3', 200)">Agregar al carrito</button>
+            </div>
+            <div class="image">
+                <img src="Imagen4.jpeg" alt="Obra de arte 4">
+                <button onclick="agregarAlCarrito('Obra de arte 4', 250)">Agregar al carrito</button>
+            </div>
+            <div class="image">
+                <img src="Imagen5.jpg" alt="Obra de arte 5">
+                <button onclick="agregarAlCarrito('Obra de arte 5', 300)">Agregar al carrito</button>
+            </div>
+            <div class="image">
+                <img src="Imagen6.jpg" alt="Obra de arte 6">
+                <button onclick="agregarAlCarrito('Obra de arte 6', 350)">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" style="background-color: #f2f2f2;">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <textarea placeholder="Mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Carrito de compra -->
+    <aside id="carrito">
+        <h2>Carrito de Compra</h2>
+        <ul id="cartItems">
+            <!-- Los elementos seleccionados se agregarán aquí -->
+        </ul>
+        <div id="total">Total: $0</div>
+        <button onclick="realizarCompra()">Realizar Compra</button>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
